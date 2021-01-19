@@ -51,7 +51,7 @@ class TasksController extends Controller
             'content' => 'required|max:10',
             ]);
             
-        $task = Task::findOrFail(id);
+        $task = Task::findOrFail($id);
         $task->status = $request->status;
         $task->content = $request->content;
         $task->save();
