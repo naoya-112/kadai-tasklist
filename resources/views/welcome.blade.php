@@ -2,7 +2,7 @@
 
 @section('content')
     @if (Auth::check())
-        <div class="row">
+        {{ Auth::user()->name }}
     @else
         <div class="center jumbotron">
             <div class="text-center">
