@@ -21,8 +21,8 @@ class TasksController extends Controller
                 'tasks' => $tasks,
             ]);
         } else {
-            return view('auth.register', [
-                'auth' => $auth,
+            return view('tasks.welcome', [
+                'tasks' => $tasks,
                 ]);
         }
         $tasks = Task::all();
