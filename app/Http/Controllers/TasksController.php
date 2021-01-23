@@ -31,11 +31,7 @@ class TasksController extends Controller
                 'tasks' => $tasks,
                 ]);
         }
-        $tasks = Task::all();
         
-        return view('tasks.index', [
-            'tasks' => $tasks,
-            ]);
     }
 
     /**
